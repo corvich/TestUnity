@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour {
 	void Update () {
         if (totalTime > delay)
         {
-            if (true || Random.Range(0, 3) == 1)
+            if (Random.Range(0, 3) == 1)
             {
                 Instantiate(prefabs, transform.position, transform.rotation);
             }
