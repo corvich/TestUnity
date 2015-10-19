@@ -5,15 +5,21 @@ public class BoxScript : MonoBehaviour {
     public float speed = 0;
     bool setti = false;
     GameObject node;
+    GameManager gameManager = null;
     //Rigidbody2D rigidbody2D;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         node = null;
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        if (gameManager.isGameOver)
+        {
+            return;
+        }
         if (setti)
         {
             transform.Translate(speed * Time.deltaTime, 0.0f, 0.0f);
