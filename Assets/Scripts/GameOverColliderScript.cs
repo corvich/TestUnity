@@ -17,11 +17,8 @@ public class GameOverColliderScript : MonoBehaviour {
         Debug.Log("Col Collider " + col.gameObject.name);
         if (col.gameObject.tag == "Box")
         {
-            Debug.Log("Col trigger");
-            GameObject.Destroy(col.gameObject);
-        }
-        else if(col.gameObject.tag == "Boxs")
-        {
+            Debug.Log("Box trigger");
+            GameObject.Destroy(col.gameObject.transform.root.gameObject);
             GameObject.Destroy(col.gameObject);
         }
     }
