@@ -33,6 +33,7 @@ public class BoxScript : MonoBehaviour {
 	}
     void OnCollisionEnter2D(Collision2D col)
     {
+        Debug.Log("<Box> Enter");
         if (col.gameObject.name == "Road")
         {
             setti = true;

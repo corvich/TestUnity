@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\GameOverColliderScript.cs" />
     <Compile Include="Assets\Scripts\GameOverText.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
+    <Compile Include="Assets\Scripts\TogetogeScript.cs" />
     <Compile Include="Assets\Scripts\backGroundController.cs" />
     <Compile Include="Assets\Scripts\backGroundScript.cs" />
     <Compile Include="Assets\gotoTemp\testScript.cs" />

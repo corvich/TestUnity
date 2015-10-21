@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
     public float delay = 2.0f;
     public GameObject prefab;
     public GameObject prefabs;
+    public GameObject togetoge;
     public bool isDebug = false;
 
     float score = 0f;
@@ -45,9 +46,14 @@ public class GameManager : MonoBehaviour {
 
         if (!isDebug && totalTime > delay)
         {
-            if (Random.Range(0, 3) == 1)
+            int ram = Random.Range(0, 3);
+            if (ram == 1)
             {
                 Instantiate(prefabs, transform.position, transform.rotation);
+            }
+            else if(ram == 2)
+            {
+                Instantiate(togetoge, transform.position, transform.rotation);
             }
             else
             {
